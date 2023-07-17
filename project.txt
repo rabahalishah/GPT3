@@ -1,11 +1,13 @@
 
 --------------------File structure
-src folder
+In src folder:
 index.js
 App.js
+components (folder)
 
-
-components folder inside src folder
+In components Folder:
+MyComponent.js
+myComponent.css
 
 npm install react-icons
 
