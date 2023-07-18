@@ -1,18 +1,19 @@
 
 --------------------File structure
+npm install react-icons
+
 In src folder:
 index.js
 App.js
+App.css
 components (folder)
+assets (folder)
 
-In components Folder:
-MyComponent.js
-myComponent.css
-
-npm install react-icons
+In components folder:
+Component.jsx
+component.css
 
 -----------------------
-
 
 //In index.js:
 import React from "react";
@@ -33,5 +34,81 @@ root.render(
 );
 
 
--------------------------
+-------------------------App.css
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+
+//This must be constant in all files
+// var(--my-color) creates a variable 
+If in other css file
+
+--my-color: red; then var(--my-color) would display red color
+
+---------------Gradients
+
+https://angrytools.com/gradient/
+
+
+------------animations
+https://animista.net
+
+----------Font
+font-family: 'Manrope', sans-serif;
+
+-----------------Setting values of variables globally
+
+This is how you set the values of variable for css globally
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
+----------------------Break points for responsive designs
+
+This is how you set you break points in css for responsive designs 
+
+@media screen and (max-width: 1050px) {
+  .gpt3__navbar-links_container {
+    display: none;
+  }
+  .gpt3__navbar-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .gpt3__navbar {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gpt3__navbar {
+    padding: 2rem;
+  }
+}
 
