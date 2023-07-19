@@ -112,3 +112,18 @@ This is how you set you break points in css for responsive designs
   }
 }
 
+-------------------CSS
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+flex-grow: This property defines how much the flex item can grow relative to other flex items in the same container. It takes a unitless value, which represents a proportionate share of the available space. In the case of flex: 1, it means that the flex item will take up all available space along the main axis, causing it to expand and fill the container.
+
+flex-shrink and flex-basis: When using flex: 1, these properties are implied as flex-shrink: 1 and flex-basis: 0%. flex-shrink defines how the item should shrink relative to other flex items if the container is too small to accommodate all the items' content.
+
+In summary, flex: 1 is a convenient way to make a flex item fill the available space along the main axis and distribute the extra space among other flex items if needed.
