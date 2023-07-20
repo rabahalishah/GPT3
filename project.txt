@@ -127,3 +127,71 @@ flex-grow: This property defines how much the flex item can grow relative to oth
 flex-shrink and flex-basis: When using flex: 1, these properties are implied as flex-shrink: 1 and flex-basis: 0%. flex-shrink defines how the item should shrink relative to other flex items if the container is too small to accommodate all the items' content.
 
 In summary, flex: 1 is a convenient way to make a flex item fill the available space along the main axis and distribute the extra space among other flex items if needed.
+
+----------------------Iterating over components array
+const featuresData = [
+  {
+    title: "Improving end distrusts instantly ",
+    text: "From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.",
+  },
+  {
+    title: "Become the tended active",
+    text: "Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.",
+  },
+  {
+    title: "Message or am nothing",
+    text: "Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.",
+  },
+  {
+    title: "Really boy law county",
+    text: "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush.",
+  },
+];
+
+<div className="gpt3__features-container">
+        {featuresData.map((item, index) => (
+          <Feature title={item.title} text={item.text} key={item.title + index}/>
+        ))}
+      </div>
+
+
+///This is how you render a component by iterating.
+// Note that map functions return and item in an array along with its index.
+
+
+
+----------------------Important css classes
+.gpt3__features-heading {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 5rem;
+}
+.gpt3__features-heading h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+}
+.gpt3__features-heading p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FF8A71;
+  margin-top: 2rem;
+}
+
+//These are some important and most frequently used css classes in this project
+
+--------------------------Dealing with grid
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+//these three are also some important grid properties.
