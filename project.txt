@@ -195,3 +195,11 @@ display: grid;
     grid-gap: 2rem;
 
 //these three are also some important grid properties.
+
+-----------------------------Classes which is applied to the container of every component
+.section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem;
+  }

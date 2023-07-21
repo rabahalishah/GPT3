@@ -3,24 +3,25 @@ import { useState } from "react";
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 // BEN --> Block Element Modifier
 const Menu = () => {
   return (
     <>
       <p>
-        <a href="#home">Home</a>
+        <Link to="/">Home</Link>
       </p>
       <p>
-        <a href="#wgpt3"></a>What is GPT
+        <Link to="/wgpt3">What is GPT</Link>
       </p>
       <p>
-        <a href="#possibility"></a>Open AI
+        <Link to="/openAI">Open AI</Link>
       </p>
       <p>
-        <a href="#features"></a>Case Studies
+        <Link to="/caseStudies">Case Studies</Link>
       </p>
       <p>
-        <a href="#blog"></a>Library
+        <Link to="/library">Library</Link>
       </p>
     </>
   );

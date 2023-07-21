@@ -1,25 +1,35 @@
 import React from "react";
 
-import {Footer, Blog, Features, Possibility, WhatGPT3, Header } from './containers';
-import {CTA, Brand, Navbar} from  './components';
-import './App.css'
-import './index.css'
-const App = () => {
+import { Blog, WhatGPT3 } from "./containers";
+import "./App.css";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import RootLayout from "./pages/Root.jsx";
+import HomePage from "./pages/HomePage";
+import OpenAI from "./pages/OpenAI";
+import CaseStudies from "./pages/CaseStudies.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <HomePage /> }, 
+      { path: "/wgpt3", element: <WhatGPT3 /> }, 
+      { path: "/openAI", element: <OpenAI /> },
+      { path: "/caseStudies", element: <CaseStudies /> },
+      { path: "/library", element: <Blog /> }, 
+    ],
+  },
+]);
+
+function App() {
   return (
-    <div className="App">
-      <div className="gradient__bg">
-      <Navbar />
-      <Header />
-      </div>
-      <Brand />
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <CTA />
-      <Blog />
-      <Footer />
-    </div>
+    <>
+      <RouterProvider router={router} />;
+    </>
   );
-};
+}
 
 export default App;
