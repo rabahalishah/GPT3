@@ -4,6 +4,8 @@ import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
+
+import OutsideClickHandler from "react-outside-click-handler";
 // BEN --> Block Element Modifier
 const Menu = () => {
   return (
@@ -63,7 +65,14 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-              <Menu />
+              <OutsideClickHandler
+                onOutsideClick={() => {
+                  setToggleMenu(false);
+                  console.log("clicked");
+                }}
+              >
+                <Menu />
+              </OutsideClickHandler>
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
               <p>Sign in</p>

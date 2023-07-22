@@ -203,3 +203,24 @@ display: grid;
   .section__margin {
     margin: 4rem;
   }
+
+  -----------------Library to handel events outside a specific component
+  https://www.npmjs.com/package/react-outside-click-handler
+
+  npm i react-outside-click-handler
+
+import OutsideClickHandler from 'react-outside-click-handler';  
+
+
+function MyComponent() {
+  return (
+    <OutsideClickHandler
+      onOutsideClick={() => {
+        alert('You clicked outside of this component!!!');
+        //Or any logic you want
+      }}
+    >
+      <yourComponent/>
+    </OutsideClickHandler>
+  );
+}

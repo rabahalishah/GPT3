@@ -16,3 +16,10 @@
     align-items: center;
     
 }
+
+@media screen and (max-width: 550px){
+    .gpt3__brand {
+        margin-bottom: -5rem
+    }
+    
+}

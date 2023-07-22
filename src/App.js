@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import OpenAI from "./pages/OpenAI";
 import CaseStudies from "./pages/CaseStudies.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

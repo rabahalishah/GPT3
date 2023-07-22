@@ -87,4 +87,14 @@
   .gpt3__footer-links div {
     margin: 1rem 0;
   }
+  .gpt3__footer-links {
+    text-align: center;
+  }
+  .gpt3__footer-links_logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+ 
 }
