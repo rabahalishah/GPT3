@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About the Project
 
-## Available Scripts
 
-In the project directory, you can run:
+## GPT3
+GPT is a full responsive UI web application built with React and React Router DOM. This Web Application includes blog tab, drop down menu and much more. You can use this front end to connect it with you back-end API to make a full stack fully responsive web application.
+## Preview
+https://myreactgpt.netlify.app
+## Features
+#### Fully Responsive 
+The core functionality of the web app is its ability to detect human faces from images. By utilizing state-of-the-art face detection algorithms, the app accurately identifies faces and highlights them for easy visualization.
 
-### `npm start`
+## Home Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/552b9034-395e-432a-8c5f-18a323fa5eee)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About Page
 
-### `npm test`
+![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/14c088f4-1ef1-4562-835e-78c2b32e64cb)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Possibilities
 
-### `npm run build`
+![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/7dbc440d-bbba-4f82-972a-d7ae653176cd)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Case Studies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/23840d17-c631-431c-95e2-dc17e07468ee)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Library/Blog
 
-### `npm run eject`
+![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/e19da7c2-105f-4808-be9e-87b0ad763194)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built With
+### Front-End
+<img src="https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/reactlogo_4.png?itok=LXFHZrKJ" width="250"/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Getting Started
+Following are some easy steps you have to follow to run this project in your machine
+## Prerequisites
+* Install [Node](https://nodejs.org/en/download)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+1. Fork this Repo
+2. Clone this repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  git clone https://github.com/github_username/repo_name.git
+```
+3. Simply Run
+```bash
+  npm install
+  
+```
+4. Install react-router-dom module
+```bash
+  npm install react-router-dom
+  
+```
+5. It is recommended to install nodemon before starting the app as nodemon is added in the script tag of package.json file
+```bash
+  npm install nodemon
+```
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
-### Analyzing the Bundle Size
+1. Fork the Project
+2. Create your Feature Branch
+```bash
+  git checkout -b feature/AmazingFeature
+```
+3. Commit your Changes 
+```bash
+  git commit -m 'Add some AmazingFeature'
+```
+4. Push to the Branch 
+```bash
+  git push origin feature/AmazingFeature
+```
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+Rabah Ali Shah - React Developer
+- https://www.linkedin.com/in/rabah-ali-shah-774706202 
+- muhammadrabah.ali46@gmail.com
