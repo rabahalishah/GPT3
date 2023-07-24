@@ -1,0 +1,63 @@
+.gpt3__error {
+  margin-top: 10%;
+  text-align: center;
+}
+.gpt3__content h1 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+.gpt3__content h3 {
+  color: var(--color-text);
+
+  font-family: var(--font-family);
+}
+
+.gpt3__error-pic img {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .gpt3__error {
+    margin-top: 70%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+}
+
+@media screen and (max-width: 850px) {
+  .gpt3__error {
+    margin-top: 40%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gpt3__error {
+    margin-top: 25%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .gpt3__error {
+        margin-top: 80%;
+        text-align: center;
+      }
+}
+@media screen and (max-width: 800px) {
+    .gpt3__error {
+        margin-top: 45%;
+        text-align: center;
+      }
+}
+@media screen and (max-width: 450px) {
+    .gpt3__error {
+        margin-top: 80%;
+        text-align: center;
+      }
+}

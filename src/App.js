@@ -3,6 +3,7 @@ import React from "react";
 import { Blog, WhatGPT3 } from "./containers";
 import "./App.css";
 import "./index.css";
+import Error from "./pages/Error";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/Root.jsx";
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <Error/>,
     children: [
       { path: "/", element: <HomePage /> }, 
       { path: "/wgpt3", element: <WhatGPT3 /> }, 
