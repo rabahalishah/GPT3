@@ -30,6 +30,10 @@ The core functionality of the web app is its ability to detect human faces from 
 
 ![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/e19da7c2-105f-4808-be9e-87b0ad763194)
 
+## Error Page
+
+![App Screenshot](https://github.com/rabahalishah/GPT3/assets/117630286/76e2385d-52e3-4e2c-9a13-ed8060501816)
+
 
 ## Built With
 ### Front-End
@@ -55,10 +59,13 @@ Following are some easy steps you have to follow to run this project in your mac
 ```
 4. Install react-router-dom module
 ```bash
-  npm install react-router-dom
-  
+  npm install react-router-dom  
 ```
-5. It is recommended to install nodemon before starting the app as nodemon is added in the script tag of package.json file
+4. Install react-outside-click-handler module
+```bash
+  npm install react-outside-click-handler
+```
+6. It is recommended to install nodemon before starting the app as nodemon is added in the script tag of package.json file
 ```bash
   npm install nodemon
 ```
